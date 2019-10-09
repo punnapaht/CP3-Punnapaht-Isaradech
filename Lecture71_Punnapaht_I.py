@@ -2,12 +2,12 @@ menuList = []
 priceList = []
 
 def showBill():
+    price = 0
     print("----- My Food -----")
     for number in range(len(menuList)):
         print(menuList[number],priceList[number],'Baht')
-    for x in range(len(priceList)):
-        price = 0
-        price += int(priceList[number])
+    for count in priceList:
+        price += int(count)
     print("Total price :",price)
 
 while True:
